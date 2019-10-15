@@ -10,35 +10,36 @@
 // }
 
 
-// Conjunction Function
-const conjunction = function (firstWord, secondWord) {
-    return `${firstWord} ${secondWord}`
-}
-
-const conjoinedWord = conjunction("Master", "Card")
-console.log(conjoinedWord)
-
-
-
-// // Mod Squad
-
-// {
-//     const ModSquad = {
-//         "members": ["Pete Cochran", "Linc Hayes", "Julie Barnes", "Capt. Adam Greer", "Chief Barney Metcalf"]
-//         "series": {
-//             "start": "1968",
-//             "end": "1973"
-//         }
-//     }
-
-//     const HTMLRepresentation = `<h1>The Mod Squad</h1>`
-
-//     ModSquad.members.forEach(member => {
-//         const HTMLRepresentation += `<div>${member}</div>`
-//     })
+// // Conjunction Function
+// const conjunction = function (firstWord, secondWord) {
+//     return `${firstWord} ${secondWord}`
 // }
 
-// document.querySelector(".show-info").innerHTML = HTMLRepresentation
+// const conjoinedWord = conjunction("Master", "Card")
+// console.log(conjoinedWord)
+
+
+
+// Mod Squad
+const ModSquad = {
+    "members": ["Pete Cochran", "Linc Hayes", "Julie Barnes", "Capt. Adam Greer", "Chief Barney Metcalf"],
+    "series": {
+        "start": "1968",
+        "end": "1973"
+    }
+}
+
+let HTMLRepresentation = `<h1>The Mod Squad</h1>`
+
+ModSquad.members.forEach(member => {
+    HTMLRepresentation += `<div>${member}</div>`
+})
+
+const modDiv = document.querySelector("#mod-container")
+const infoDiv = document.createElement('div')
+infoDiv.className = "show-info"
+modDiv.appendChild(infoDiv)
+console.log(document.querySelector(".show-info").innerHTML = HTMLRepresentation)
 
 
 
