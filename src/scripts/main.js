@@ -1,22 +1,22 @@
 // Scope Exercises
 // Some software developers were contracted to build some code, but there weren't quite clear yet on how scope works. Your job is to fix their code to stop all the errors from being thrown.
 
-// C is for Cookie
-const cookies = ["Oatmeal Raisin", "Chocolate Chip", "Sugar", "Peanut Butter", "Snickerdoodle", "Ginger"]
+// // C is for Cookie
+// const cookies = ["Oatmeal Raisin", "Chocolate Chip", "Sugar", "Peanut Butter", "Snickerdoodle", "Ginger"]
 
-for (let x = 0; x < cookies.length; x++) {
-    const currentCookie = cookies[x]
-    console.log(`Mmmmmmm... that's a good ${currentCookie} cookie`)
-}
-
-
-// // Conjunction Function
-// const conjunction = function (firstWord, secondWord) {
-//     const conjoinedWord = `${firstWord} ${secondWord}`
+// for (let x = 0; x < cookies.length; x++) {
+//     const currentCookie = cookies[x]
+//     console.log(`Mmmmmmm... that's a good ${currentCookie} cookie`)
 // }
 
-// conjunction("Master", "Card")
-// console.log(conjoinedWord)
+
+// Conjunction Function
+const conjunction = function (firstWord, secondWord) {
+    return `${firstWord} ${secondWord}`
+}
+
+const conjoinedWord = conjunction("Master", "Card")
+console.log(conjoinedWord)
 
 
 
