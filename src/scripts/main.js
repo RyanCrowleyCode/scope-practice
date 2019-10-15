@@ -1,45 +1,45 @@
 // Scope Exercises
 // Some software developers were contracted to build some code, but there weren't quite clear yet on how scope works. Your job is to fix their code to stop all the errors from being thrown.
 
-// // C is for Cookie
-// const cookies = ["Oatmeal Raisin", "Chocolate Chip", "Sugar", "Peanut Butter", "Snickerdoodle", "Ginger"]
+// C is for Cookie
+const cookies = ["Oatmeal Raisin", "Chocolate Chip", "Sugar", "Peanut Butter", "Snickerdoodle", "Ginger"]
 
-// for (let x = 0; x < cookies.length; x++) {
-//     const currentCookie = cookies[x]
-//     console.log(`Mmmmmmm... that's a good ${currentCookie} cookie`)
-// }
+for (let x = 0; x < cookies.length; x++) {
+    const currentCookie = cookies[x]
+    console.log(`Mmmmmmm... that's a good ${currentCookie} cookie`)
+}
 
 
-// // Conjunction Function
-// const conjunction = function (firstWord, secondWord) {
-//     return `${firstWord} ${secondWord}`
-// }
+// Conjunction Function
+const conjunction = function (firstWord, secondWord) {
+    return `${firstWord} ${secondWord}`
+}
 
-// const conjoinedWord = conjunction("Master", "Card")
-// console.log(conjoinedWord)
+const conjoinedWord = conjunction("Master", "Card")
+console.log(conjoinedWord)
 
 
 
 // Mod Squad
-// const ModSquad = {
-//     "members": ["Pete Cochran", "Linc Hayes", "Julie Barnes", "Capt. Adam Greer", "Chief Barney Metcalf"],
-//     "series": {
-//         "start": "1968",
-//         "end": "1973"
-//     }
-// }
+const ModSquad = {
+    "members": ["Pete Cochran", "Linc Hayes", "Julie Barnes", "Capt. Adam Greer", "Chief Barney Metcalf"],
+    "series": {
+        "start": "1968",
+        "end": "1973"
+    }
+}
 
-// let HTMLRepresentation = `<h1>The Mod Squad</h1>`
+let HTMLRepresentation = `<h1>The Mod Squad</h1>`
 
-// ModSquad.members.forEach(member => {
-//     HTMLRepresentation += `<div>${member}</div>`
-// })
+ModSquad.members.forEach(member => {
+    HTMLRepresentation += `<div>${member}</div>`
+})
 
-// const modDiv = document.querySelector("#mod-container")
-// const infoDiv = document.createElement('div')
-// infoDiv.className = "show-info"
-// modDiv.appendChild(infoDiv)
-// console.log(document.querySelector(".show-info").innerHTML = HTMLRepresentation)
+const modDiv = document.querySelector("#mod-container")
+const infoDiv = document.createElement('div')
+infoDiv.className = "show-info"
+modDiv.appendChild(infoDiv)
+console.log(document.querySelector(".show-info").innerHTML = HTMLRepresentation)
 
 
 
